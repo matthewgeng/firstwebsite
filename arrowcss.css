@@ -1,0 +1,1224 @@
+body{
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+#header {
+	position:fixed;
+	top:1.250em;
+	width:100%;
+	height:3.125em;
+	z-index:3;
+}
+
+#arrow {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:80vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid #008EFF;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:2;
+	opacity:0;
+	animation: fadein 4s;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+	z-index:4;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#home{
+	opacity:0;
+	padding-top:0.625em;
+  width:10%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 3s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#briefhistoryheader{
+	opacity:0;
+	padding-top:0.625em;
+  width:14%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 3s;
+	animation-delay:2.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#maintext{
+	font-family: 'Raleway', sans-serif;
+	/*border:thin solid red;*/
+	padding-top:15vmax;
+	text-align:center;
+	color:white;
+	font-size: 10vw;
+	font-weight:300;
+	animation: fadein 4s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#secondtext{
+	font-family: 'Raleway', sans-serif;
+	border-radius:15px;
+	/*border:thin solid red;*/
+	margin:10vh 22vw 0vw 22vw;
+	padding:0.25em;
+	text-align:center;
+	color:orange;
+	background-color:white;
+	font-size: 3vmax;
+	font-weight:300;
+	opacity:0;
+	animation: fadein 4s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#aboutme{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+	animation: fadein 3s;
+	animation-delay:3.5s;
+	animation-fill-mode: forwards;
+}
+#mentalheader{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+  border-left:1px solid grey;
+	animation: fadein 3s;
+	animation-delay:4s;
+	animation-fill-mode: forwards;
+}
+#skills{
+	opacity:0;
+	padding-top:0.625em;
+  width:9.5%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+	border-left:1px solid grey;
+  float:right;
+	animation: fadein 3s;
+	animation-delay:4.5s;
+	animation-fill-mode: forwards;
+}
+#rulesheader{
+	opacity:0;
+	padding-top:0.625em;
+  width:9%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;   
+	animation: fadein 3s;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#home a, #aboutme a, #briefhistoryheader a, #rulesheader a, #skills a, #mentalheader a{
+	text-decoration:none;
+	color:#00AFFF;
+	padding:0.75em;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+    font-size: 1.5vmax;
+	background-color:white;
+	transition: .5s ease;
+}
+
+#aboutme a:hover, #briefhistoryheader a:hover, #rulesheader a:hover, #skills a:hover, #mentalheader a:hover{
+	background-color:grey;
+	color: orange;
+}
+#home a:hover{
+	background-color:grey;
+	color: white;
+}
+
+.arrowimage {
+	border-radius:50%;
+	position:relative;
+	left:20%;
+	top:19%;
+	height:50px;
+	width:50px;
+	z-index:4;
+}
+
+#arrow:hover {
+    transform: scale(1.15,1.15);
+}
+#space{
+    position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/gif.gif");
+	background-size:cover;
+    z-index:-1;
+}
+
+#briefhistory{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/naissmith.jpg");
+	background-size:cover;
+    z-index:-1;
+}
+.column1{
+	margin:4% 0% 4% 3%;
+	position:absolute;
+	display:inline-block;
+	height:83vh;
+	width:30%;
+	/*border:thin solid green;*/
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	color:orange;
+	font-size: 9vw;
+	font-weight:300;
+}
+.column1 span#history{
+border-radius:15px;
+padding:0.2em;
+	display:inline-block;
+background-color:orange;
+	position:relative;
+	color:white;
+	top:25%;
+}
+.column2{
+	margin:4% 0% 4% 5%;
+	position:absolute;
+		font-family: 'Raleway', sans-serif;
+	left:30%;
+	display:inline-block;
+	height:83vh;
+	width:30%;
+	/*border:thin solid green;*/
+}
+.column3{
+	border-radius: 15px;
+	margin:4% 4% 4% 1%;
+	position:absolute;
+		text-align:center;
+	font-family: 'Raleway', sans-serif;
+	color:orange;
+	font-size: 9vw;
+	font-weight:300;
+	left:66%;
+	display:inline-block;
+	height:83vh;
+	width:30%;
+	background-color:white;
+}
+.column3 p#historytext{
+	text-align:justify;
+	margin:1em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	font-weight:300;
+	font-size:1.3vw;
+}
+
+
+#arrow2 {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:180vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid #008EFF;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrow2:hover {
+    transform: scale(1.15,1.15);
+}
+#rules{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/team.jpg");
+	background-size:cover;
+	z-index:-1;
+}
+#content{
+	padding:3% 3% 2.5% 3%;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size: 7vw;
+	font-weight:300;
+}
+#content span{
+	background-color:orange;
+	border-radius:15px;
+	padding:0.1em;
+	
+}
+#list{
+	position:absolute;
+	margin:0.5em 3% 1.5em 3%;
+	border-radius:15px;
+	background-color:white;
+	width:94%;
+}	
+#list ol{
+	display:inline-block;
+	line-height:1.95;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	z-index:2;
+	font-weight:300;
+	font-size:2.5vh;
+	
+}
+#arrow3 {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:280vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrow3:hover {
+    transform: scale(1.15,1.15);
+}
+
+#rules2{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/statue.jpg");
+	background-size:cover;
+	z-index:-1;
+}
+
+#list2{
+	position:absolute;
+	margin:2em 3% 1.5em 3%;
+	border-radius:15px;
+	width:94%;
+	background-color:white;
+}
+
+ol.blue{
+	line-height:2;
+	display:inline-block;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	font-weight:300;
+	font-size:2.5vh;
+}
+#arrow4 {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:380vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrow4:hover {
+    transform: scale(1.15,1.15);
+}
+#aboutmecontent{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/aboutme.jpeg");
+	background-size:cover;
+    z-index:-1;
+}
+.column3 span#aboutmetitle{
+border-radius:15px;
+padding:0.2em;
+	display:inline-block;
+	background-color:orange;
+	position:relative;
+	top:25%;
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size: 8vw;
+	font-weight:300;
+}
+#column3color{
+	background-color:transparent;
+	text-align:center;
+}
+#column1color{	
+	position:absolute;
+	background-color:white;
+	text-align:center;
+	border-radius: 10px;	
+}
+
+.column1 p#aboutmetext{
+	text-align:justify;
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	font-weight:300;
+	font-size:1.22vw;
+}
+#arrow5 {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:480vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid #00aEFF;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrow5:hover {
+    transform: scale(1.15,1.15);
+}
+#contentpage{
+    position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/contentpageimage.jpeg");
+	background-size:cover;
+    z-index:-1;
+}
+
+#column1content{
+	text-align:center;
+	display:inline-block;
+	margin:3% 0% 3% 3%;
+	color:#008EFF;
+	height:40vh;
+	width:30%;
+	font-weight:300;
+	font-size:4vw;
+}
+#column2content{
+	text-align:center;
+	margin:3% 0% 3% 5%;
+	color:#008EFF;
+	height:40vh;
+	width:30%;
+	display:inline-block;
+	font-weight:300;
+	font-size:4vw;
+}
+#column3content{
+	text-align:center;
+	margin:3% 3% 3% 1%;
+	width:30%;
+	display:inline-block;
+	color:#008EFF;
+	height:40vh;
+	background:transparent;
+	font-weight:300;
+	font-size:4vw;
+}
+#column1content div, #column2content div, #column3content div{
+
+	border-bottom:4px solid grey;
+}
+#column1content span, #column2content span, #column3content span{
+	border-radius:15px;
+	background-color:white;
+	padding:0.2em 0.5em .25em 0.5em;
+	margin-bottom:3vh;
+	display:inline-block;
+
+}
+#footer{
+	position:absolute;
+	width:100%;
+	z-index:-1;
+	background-color:grey;
+}
+
+#border{
+	position:relative;
+	margin: 1.5em 6em 1.5em 6em;
+	height:6em;
+	border-top:2px solid #008EFF;
+	border-bottom:2px solid #008EFF;
+	z-index:3;
+	text-align:center;
+}
+#border span{
+		position:relative;
+		margin-top:0.5em;
+		display:inline-block;
+		top:10%;
+		font-family: 'Lato', sans-serif;
+		font-weight:300;
+		font-size:1.5em;
+		color:orange;
+}
+#creditsborder{
+	position:relative;
+	z-index:3;
+	text-align:center;
+}
+#creditsborder a{
+		position:relative;
+		display:inline-block;
+		padding-top:0.5em;
+		top:30%;
+		font-family: 'Lato', sans-serif;
+		font-weight:300;
+		font-size:1.5em;
+		color:orange;
+		text-decoration:none;
+}
+#creditscorder a:hover{
+		color:white;
+}
+#maintextskills{
+	font-family: 'Raleway', sans-serif;
+	/*border:thin solid red;*/
+	padding-top:3vmax;
+	text-align:center;
+	color:white;
+	font-size: 10vw;
+	font-weight:300;
+}
+#maintextskills span{
+	border-radius:15px;
+	padding:0.1em;
+	background-color:orange;
+}
+#test{
+	z-index:5;
+}
+#arrowleft {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:665vh;
+	left: 15%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrowleft:hover {
+    transform: scale(1.15,1.15);
+}
+#arrowdown {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:678vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrowdown:hover {
+    transform: scale(1.15,1.15);
+}
+#arrowright {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:665vh;
+	left: 79%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrowright:hover {
+    transform: scale(1.15,1.15);
+}
+#maintextshooting{
+	font-family: 'Raleway', sans-serif;
+	/*border:thin solid red;*/
+	padding-top:3.5vmax;
+	text-align:center;
+	color:white;
+	font-size: 8vw;
+	font-weight:300;
+	animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#maintextshooting span{
+	padding:0.2em;
+	border-radius:15px;
+	background-color:orange;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#shoot{
+	overflow:hidden;
+}
+#finish{
+	overflow:hidden;
+}
+#moves{
+	overflow:hidden;
+}
+#maintextfinishing{
+	font-family: 'Raleway', sans-serif;
+	/*border:thin solid red;*/
+	padding-top:3vmax;
+	text-align:center;
+	color:white;
+	font-size: 8vw;
+	font-weight:300;
+	animation: fadein 2s;
+}
+#maintextfinishing span{
+	padding:0.1em;
+	border-radius:15px;
+	background-color:orange;
+}
+#finishingtextholder{
+	border-radius:15px;
+	margin:3.2% 0% 4% 3%;
+	position:absolute;
+	left:35%;
+	width:60%;
+	font-weight:300;
+	background-color:white;
+	z-index:2;
+}
+#finishingtextholder p{
+	text-align:justify;
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008EFF;
+	font-weight:300;
+	font-size:2.25vh;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+ #homeshoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:10%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 2s;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#briefhistoryheadershoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:14%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 2.5s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#aboutmeshoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+	animation: fadein 2s;
+	animation-delay:1.5s;
+	animation-fill-mode: forwards;
+}
+#mentalheadershoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+  border-left:1px solid grey;
+	animation: fadein 3s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+}
+#skillsshoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:9.5%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+	border-left:1px solid grey;
+  float:right;
+	animation: fadein 2s;
+	animation-delay:0.5s;
+	animation-fill-mode: forwards;
+}
+#rulesheadershoot{
+	opacity:0;
+	padding-top:0.625em;
+  width:9%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;   
+	animation: fadein 2s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#homeshoot a, #aboutmeshoot a, #briefhistoryheadershoot a, #rulesheadershoot a, #skillsshoot a, #mentalheadershoot a{
+	text-decoration:none;
+	color:#00AFFF;
+	padding:0.75em;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+    font-size: 1.5vmax;
+	background-color:white;
+	transition: .5s ease;
+}
+
+#aboutmeshoot a:hover, #briefhistoryheadershoot a:hover, #rulesheadershoot a:hover, #skillsshoot a:hover, #mentalheadershoot a:hover{
+	background-color:grey;
+	color: orange;
+}
+#homeshoot a:hover{
+	background-color:grey;
+	color: white;
+}
+
+#homefinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:10%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 2s;
+	animation-delay:0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#briefhistoryheaderfinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:14%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;
+  border-right:1px solid grey;
+	animation: fadein 2s;
+	animation-delay:1s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#aboutmefinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+	animation: fadein 2s;
+	animation-delay:2s;
+	animation-fill-mode: forwards;
+}
+#skillsfinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:9.5%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+	border-left:1px solid grey;
+  float:right;
+	animation: fadein 2s;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+}
+#mentalheaderfinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:13%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:right;
+  border-left:1px solid grey;
+	animation: fadein 3s;
+	animation-delay:2.5s;
+	animation-fill-mode: forwards;
+}
+#rulesheaderfinish{
+	opacity:0;
+	padding-top:0.625em;
+  width:9%;
+  height:80%;
+  display:inline-block;
+  	text-align:center;
+  float:left;   
+	animation: fadein 2s;
+	animation-delay:1.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+#homefinish a, #aboutmefinish a, #briefhistoryheaderfinish a, #rulesheaderfinish a, #skillsfinish a, #mentalheaderfinish a {
+	text-decoration:none;
+	color:#00AFFF;
+	padding:0.75em;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+    font-size: 1.5vmax;
+	background-color:white;
+	transition: .5s ease;
+}
+
+#aboutmefinish a:hover, #briefhistoryheaderfinish a:hover, #rulesheaderfinish a:hover, #skillsfinish a:hover, #mentalheaderfinish a:hover{
+	background-color:grey;
+	color: orange;
+}
+#homefinish a:hover{
+	background-color:grey;
+	color: white;
+}
+ 
+#shootingimage{
+	 position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/shot.gif");
+	background-size:cover;
+    z-index:-1;
+}
+#movesimage{
+	   position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/moves.gif");
+	background-size:cover;
+    z-index:-1;
+}
+#finishingimage{
+	  position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/finishing.gif");
+	background-size:cover;
+    z-index:-1;
+}
+#shootingtextholder{
+	display:inline-block;
+	border-radius:15px;
+	margin:3.5% 0% 4% 3%;
+	position:absolute;
+	width:60%;
+	font-weight:300;
+	background-color:white;
+	z-index:2;
+}
+#shootingtextholder p{
+	text-align:justify;
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	font-weight:300;
+	font-size:2.25vh;
+}
+
+
+#creditsimage{
+	background-color:grey;
+	height:100vh;
+	width:100vw;
+	z-index:-1;
+}
+#creditstextholder{
+	display:inline-block;
+	border-radius:15px;
+	margin:4% 0% 4% 3%;
+	position:absolute;
+	width:94%;
+	font-weight:300;
+	background-color:white;
+	z-index:2;
+}
+#creditstextholder p{
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008EFF;
+	font-weight:300;
+	font-size:1.25vw;
+}
+
+#creditstextholder a {	
+	text-decoration:none;
+	font-family:'Roboto', sans-serif;
+	color:orange;
+	font-size:1.25vw;
+	position: relative;
+	display: inline-block;
+    transition: color .2s ease;
+	padding: 0px 0;
+	margin-bottom: 0px;
+}
+.b {	
+	text-decoration:none;
+	font-family:'Roboto', sans-serif;
+	color:#008eff !important;
+	font-size:1.25vw;
+	position: relative;
+	display: inline-block;
+    transition: color .2s ease;
+	padding: 0px 0;
+	margin-bottom: 0px;
+}
+
+#creditstextholder a:hover {
+ color:#008eff;
+}
+
+#creditstextholder a:hover::after, #creditstextholder a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+#creditstextholder a::after, #creditstextholder a::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 2px);
+  width: 0;
+  right: 0;
+  height: 3px;
+}
+
+#creditstextholder a::before {
+	transition: width .25s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+	background: #008eff;
+}
+
+#creditstextholder a::after {
+	transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+	background: orange;
+}
+#maintextmoves{
+	font-family: 'Raleway', sans-serif;
+	/*border:thin solid red;*/
+	padding-top:4vmax;
+	text-align:center;
+	color:white;
+	font-size: 6vw;
+	font-weight:300;
+	animation: fadein 2s;
+}
+#maintextmoves span{
+	padding:0.2em;
+	border-radius:15px;
+	background-color:orange;
+}
+#arroworange {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:80vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid orange;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:2;
+	opacity:0;
+	animation: fadein 2s;
+	animation-delay:0.5s;
+	animation-fill-mode: forwards;
+	z-index:4;
+}
+#arroworange:hover {
+    transform: scale(1.15,1.15);
+}
+#arrowblue {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:80vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid #008EFF;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:2;
+	opacity:0;
+	animation: fadein 4s;
+	animation-delay:0.5s;
+	animation-fill-mode: forwards;
+	z-index:4;
+}
+#arrowblue:hover {
+    transform: scale(1.15,1.15);
+}
+#movestextholderleft{
+	display:inline-block;
+	border-radius:15px;
+	margin:3.2% 0% 4% 3%;
+	position:absolute;
+	width:30%;
+	font-weight:300;
+	background-color:white;
+	z-index:5;
+}
+#movestextholderleft p{
+	text-align:justify;
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008EFF;
+	font-weight:300;
+	font-size:2.25vh;
+}
+#movestextholderright{
+	border-radius:15px;
+	margin:3.2% 0% 4% 3%;
+	position:absolute;
+	left:64%;
+	width:30%;
+	font-weight:300;
+	background-color:white;
+	z-index:2;
+}
+#movestextholderright p{
+	text-align:justify;
+	margin:.75em 1em 1em 1em;
+	line-height:5vh;
+	font-family:'Roboto', sans-serif;
+	color:#008EFF;
+	font-weight:300;
+	font-size:2.25vh;
+}
+#mental{
+	margin:0px;
+	padding:0px;
+	position:relative;
+	top:0px;
+	height:100vh;
+	background-image:url("images/zachlavine.JPG");
+	background-size:cover;
+    z-index:-1;
+}
+
+.column3 p#mentaltext{
+	text-align:justify;
+	margin:1em 1em 1em 1em;
+	line-height:4vh;
+	font-family:'Roboto', sans-serif;
+	color:#008eff;
+	font-weight:300;
+	font-size:1.1vw;
+}
+.column1 span#mentaltitle{
+border-radius:15px;
+padding:0.2em;
+	display:inline-block;
+background-color:orange;
+	position:relative;
+	color:white;
+	top:15%;
+}
+#arrow2down {
+	display:inline-block;
+	position:absolute;
+	border-radius:50%;
+	top:580vh;
+	left: 47%;
+    width:80px;
+    height:80px;
+    /*background: red;*/
+	border:thin solid #008EFF;
+    transition: transform 0.5s;	
+	transition-timing-function: ease;
+	z-index:4;
+}
+#arrow2down:hover {
+    transform: scale(1.15,1.15);
+}
